@@ -1,0 +1,107 @@
+<!-- MIT License
+
+Copyright (c) 2024 Bhavya Jain
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Exploring Illuminability: Polygonal Rooms and Light Dynamics</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-height: 5000px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 25px;
+        font-family: cursive;
+        text-align: left;
+        color: red;
+      }
+
+      h2 {
+        font-size: 20px;
+        font-family: cursive;
+        margin-bottom: 10px;
+        color: #1877f2;
+      }
+
+      p {
+        margin-bottom: 15px;
+        color: #333;
+      }
+
+      a {
+        color: #1877f2;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      ul li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body onload="draw()">
+    <div class="container">
+      <h1>REPORT</h1>
+        <h2>Exploring Illuminability: Polygonal Rooms and Light Dynamics</h2>
+    <p>
+        I started off the summer with creating a program called 
+        <a href="https://b1805.github.io/star_customizer/">Custom Star Room Illumination (Star Customizer).</a>
+        Custom Star Room Illumination is an interactive web-based application that simulates light rays bouncing off walls in a customizable star room. You can adjust the number of light rays, the number of triangles forming the room, precision, photon thickness colors, and animation speed. You can also switch to the angle version to shoot the rays one at a time at your chosen angles and colours. Additionally, you can record the simulation and download the video. This also counts the number of active photons. The theory behind this is that any star room made with an even number of triangles >=6 (6,8,10,12....), when rays of light is shot from its midpoint in all directions, would never return back to the midpoint but illuminate the rest of the room completely. It is as if you're standing in the middle of the room with a lamp, an observer can see everything in the room except for you!
+    </p>
+    <p>
+        Next, I made the 
+        <a href="https://b1805.github.io/double_star/">Double Star</a>
+        program. Double star program is similar to the Star_customizer with all the features including adjusting the number of light rays, precision, photon thickness colors, animation speed, recording, the option to switch to the angle version to shoot the rays one at a time at your chosen angles and colours and the active photon counter. This program lets you use all these features for Double Star created using 20 isosceles triangles ABC with A=30=B, C=120. This figure has 2 unilluminable points. When rays of light are shot from one of these points in all directions, it would never return back either of them but illuminate the rest of the room completely. It is as if you're standing at one of these points with a lamp, an observer can see everything in the room except for you and the other point!
+    </p>
+    <p>
+        Next, I made the 
+        <a href="https://b1805.github.io/triangle_clicking/">Custom Un-illuminable Room Finder (Triangle Clicking)</a>
+        program. This program is another interactive web-based application that lets you create your own new unilluminable rooms. You can simply select the right-angle isosceles triangles you like and then click create shape. This has a wide range of options to customize, including the location and zoom of upto three magnification boxes for the Un-illuminable point, number of light rays, speed, precision, colours, size of the triangle grid, partition and post, photon thickness, location of the light source, option to save and load the created shape and selected settings, etc. You can also switch to the angle version to shoot the rays one at a time at your chosen angles and colours. Additionally, you can record the simulation and download the video and you can remove or keep the grid lines while recording. This also counts the number of active photons. Couple of notes: Firstly, select triangles using left mouse click, right click changes the location (coordinates) of the light source and the (small) magnification box. You can individually change their coordinates using the controls on the right. You can move the big magnification box by dragging it! Secondly, if you're loading both Settings and Shape, load Settings first before loading the Shape.
+    </p>
+    <p>
+        Next, I made the 
+        <a href="https://b1805.github.io/Snakes_Bushes/">Custom Room Illuminator (Snakes & Bushes)</a>
+        program. This program is another interactive web-based application that lets you find points to illuminate any room. First select all the customizable settings including the grid size, precision, photon thickness, distance from the source, partition and post, speed, M & N, light source coordinates, magnification and colours. Then select the triangles you like or switch to a square grid and select the squares you like. If you want your light source coordinates to be autopicked, hit the first create shape button otherwise the second one which will apply your chosen light source coordinates. Now you can pick from different animation options and 3 modes of animation, play around with these features and use the dragging (by holding and moving the mouse) and zoom features to find points to fill all polygonal rooms! Additionally, you can record the simulation and download the video and you can remove or keep the grid lines while recording.
+    </p>
+    </body>
+</html>
